@@ -2,3 +2,8 @@ iframe.code-js, iframe.code-template, iframe.preview{
 	display: block;
 	width:800px;
 }
+textarea.code{
+	width:800px;
+	height:200px;
+	display:block;
+}

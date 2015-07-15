@@ -39,9 +39,9 @@ setTimeout(() => {
 		  var item = <HTMLTextAreaElement>items.item(i);
 		  var url = item.attributes.getNamedItem("data-url").value;
 		var webclient = new Web.WebClient();
-		webclient.get(url).then(s => {
+		webclient.get(url).then((s: string) => {
             debugger;
-            item.innerText = s;}
+            item.innerText = s.replace("\t", " ");}
             ); 
         };
         f();

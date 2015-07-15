@@ -48,7 +48,7 @@ setTimeout(function () {
             var webclient = new Web.WebClient();
             webclient.get(url).then(function (s) {
                 debugger;
-                item.innerText = s.replace("\t", " ");
+                item.innerText = s.replace(/\t/g, " ");
             });
         };
         f();

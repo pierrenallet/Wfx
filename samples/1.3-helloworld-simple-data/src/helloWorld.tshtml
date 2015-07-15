@@ -1,0 +1,5 @@
+<template name='helloTemplate' module="Sample">
+	<div text="@message">
+	</div>
+	
+</template>

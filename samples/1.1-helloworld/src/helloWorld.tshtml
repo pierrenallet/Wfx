@@ -1,0 +1,5 @@
+<template name='helloTemplate' module="Sample">
+	<div>
+		<div>hello world</div>
+	</div>
+</template>

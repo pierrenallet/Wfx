@@ -1,0 +1,6 @@
+<template name='timeTemplate' module="Sample">
+	<div>
+		The current time is 
+		<div text="@(new Date())"></div>
+	</div>
+</template>

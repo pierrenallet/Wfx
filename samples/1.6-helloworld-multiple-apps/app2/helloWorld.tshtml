@@ -1,0 +1,7 @@
+<template name='helloTemplate' module="App2">
+	<div>
+		<div text="@message"></div>
+		<span>Enter message your message:</span>
+		<input value="@message"></input>
+	</div>
+</template>

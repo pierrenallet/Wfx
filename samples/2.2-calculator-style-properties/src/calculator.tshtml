@@ -1,0 +1,15 @@
+<template name='calcTemplate' module="Sample">
+	<div>
+		<div>
+			<span>Width:</span>
+			<input type='text' value="@width"></input>
+		</div>
+		<div>
+			<span>Height:</span>
+			<input type='text' value="@height"></input>
+		</div>
+		<div>
+			<div style="background:red" text="@surface()" height="@height+'px'" width="@width+ 'px'"></div>
+		</div>
+	</div>
+</template>

@@ -1,0 +1,10 @@
+{
+	 "compilerOptions": {
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "out": "../calculator.js",
+        "sourceMap": true,
+        "declaration": false
+    }
+}

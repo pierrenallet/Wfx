@@ -1,0 +1,13 @@
+<template name='calcTemplate' module="Sample">
+	<div>
+		<div>
+			<input type='text' value="@firstNumber"></input>
+		</div>
+		<div>
+			<input type='text' value="@secondNumber"></input>
+		</div>
+		<div>
+			<span text="@result()" />
+		</div>
+	</div>
+</template>

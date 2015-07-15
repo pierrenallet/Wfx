@@ -1,0 +1,17 @@
+<template name='colorPickerTemplate' module="Sample">
+	<div>
+		<div>
+			<span>Red:</span>
+			<input type="range" value="@red" />
+		</div>
+		<div>
+			<span>Green:</span>
+			<input type="range" value="@green" />
+		</div>
+		<div>
+			<span>Blue:</span>
+			<input type="range" value="@blue" />
+		</div>
+		<div style="height:100px; width:100px" background="@color()"></div>
+	</div>
+</template>

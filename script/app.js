@@ -45,6 +45,9 @@ setTimeout(function () {
         var item = items.item(i);
         var url = item.attributes.getNamedItem("data-url").value;
         var webclient = new Web.WebClient();
-        webclient.get(url).then(function (s) { return item.innerText = s; });
+        webclient.get(url).then(function (s) {
+            debugger;
+            item.innerText = s;
+        });
     }
 }, 0.1);

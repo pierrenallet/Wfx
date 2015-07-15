@@ -1,0 +1,30 @@
+<template name="todoListTemplate" module="Todo">
+	<section id="todoapp">
+		<header id="header">
+			<h1>todos</h1>
+			<form id="todo-form" submit="@addTodo()">
+				<input id="new-todo" value="@newTodoText" placeholder="What needs to be done?" enabled="true" autofocus="true" />
+			</form>
+		</header>
+		<section id="main" visible="@todos.length">
+			<input id="toggle-all" type="checkbox" click="@markAll()" />
+			<label for="toggle-all" text="Mark all as complete"></label>
+			<ul id="todo-list" foreach="@visibleTodos()" template="@(todoItemTemplate)"></ul>
+		</section>
+		<footer id="footer" visible="@todos.length">
+			<span id="todo-count">
+				<strong text="@remainingTodos().length"></strong>
+				<span if="@remainingTodos().length > 1">
+					<span text=" items left" /></span>
+				<span ifnot="@remainingTodos().length > 1">
+					<span text=" item left" /></span>
+			</span>
+			<ul id="filters">
+				<statusButton status="@(TodoListStatus.all)" text="All" />
+				<statusButton status="@(TodoListStatus.active)" text="Active" />
+				<statusButton status="@(TodoListStatus.completed)" text="Completed" />
+			</ul>
+			<button id="clear-completed" click="@clearCompletedTodos()" visible="@completedTodos().length" text="Clear completed"></button>
+		</footer>
+	</section>
+</template>

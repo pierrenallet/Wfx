@@ -1,0 +1,5 @@
+<template element="statusButton" module="Todo" type="StatusButton">
+	<li>
+		<a click="@select(), source:component" href="#/" class="@data.status === @status ? 'selected' : '', source:component" text="@text, source:component"></a>
+	</li>
+</template>

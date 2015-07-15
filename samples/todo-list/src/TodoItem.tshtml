@@ -1,0 +1,12 @@
+<template module="Todo" name="todoItemTemplate" dataType="Todo.TodoItem">
+  <li class="@cssClass()">
+    <div class="view">
+      <input class="toggle" type="checkbox" checked="@isCompleted" click="@toggleCompleted()" />
+      <label dblclick="@edit()" text="@text"></label>
+      <button class="destroy" click="@destroy()"></button>
+    </div>
+    <form submit="@saveEdits()" visible="@isEditing">
+      <input class="" value="@text" blur="@saveEdits()" />
+    </form>
+  </li>
+</template>

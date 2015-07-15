@@ -35,13 +35,16 @@ module Web {
 setTimeout(() => {
 	var items = document.querySelectorAll(".code");
 	for (var i = 0; i < items.length; i++) {
-		var item = <HTMLTextAreaElement>items.item(i);
-		var url = item.attributes.getNamedItem("data-url").value;
+        var f = () =>{
+		  var item = <HTMLTextAreaElement>items.item(i);
+		  var url = item.attributes.getNamedItem("data-url").value;
 		var webclient = new Web.WebClient();
 		webclient.get(url).then(s => {
             debugger;
             item.innerText = s;}
             ); 
+        };
+        f();
 	}
 }
 	, 0.1);

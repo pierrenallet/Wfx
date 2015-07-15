@@ -42,12 +42,15 @@ var Web;
 setTimeout(function () {
     var items = document.querySelectorAll(".code");
     for (var i = 0; i < items.length; i++) {
-        var item = items.item(i);
-        var url = item.attributes.getNamedItem("data-url").value;
-        var webclient = new Web.WebClient();
-        webclient.get(url).then(function (s) {
-            debugger;
-            item.innerText = s;
-        });
+        var f = function () {
+            var item = items.item(i);
+            var url = item.attributes.getNamedItem("data-url").value;
+            var webclient = new Web.WebClient();
+            webclient.get(url).then(function (s) {
+                debugger;
+                item.innerText = s;
+            });
+        };
+        f();
     }
 }, 0.1);

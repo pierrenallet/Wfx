@@ -1,0 +1,8 @@
+<template name='calcTemplate' module="Sample">
+	<div>
+		<button class="btn" click="@decrease()">-</button>
+		<span text="@value"></span>
+		<button class="btn" click="@increase()">+</button>
+			
+	</div>
+</template>

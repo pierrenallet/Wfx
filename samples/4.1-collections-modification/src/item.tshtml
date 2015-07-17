@@ -1,0 +1,3 @@
+<template name='itemTemplate' module="Sample">
+	<div text="@"></div>
+</template>

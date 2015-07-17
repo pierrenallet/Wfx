@@ -1,0 +1,4 @@
+<template name='shoppingCartTemplate' module="Sample">
+	<div foreach="@items" template="@(itemTemplate)">
+	</div>
+</template>

@@ -82,6 +82,11 @@ declare module Wfx {
     }
 }
 declare module Wfx {
+    class StyleBehavior extends PropertyBehavior {
+        applyValue(target: HTMLElement, component: Component, name: string, value: any): void;
+    }
+}
+declare module Wfx {
     class VisibleBehavior extends PropertyBehavior {
         applyValue(target: HTMLElement, component: Component, name: string, value: any): void;
     }
@@ -107,19 +112,6 @@ declare module Wfx {
     }
 }
 declare module Wfx {
-    class StyleBehavior extends PropertyBehavior {
-        applyValue(target: HTMLElement, component: Component, name: string, value: any): void;
-    }
-}
-declare module Wfx {
-    interface Template {
-        (data: any): Component;
-    }
-    interface ComponentTemplate {
-        (attributes: any): Component;
-    }
-}
-declare module Wfx {
     var behaviors: any;
 }
 declare module Wfx {
@@ -131,4 +123,12 @@ declare module Wfx {
     };
     type ComponentChild = Component | string;
     function element(tagName: string, attributes: any, ...children: Array<ComponentChild>): Component;
+}
+declare module Wfx {
+    interface Template {
+        (data: any): Component;
+    }
+    interface ComponentTemplate {
+        (attributes: any): Component;
+    }
 }

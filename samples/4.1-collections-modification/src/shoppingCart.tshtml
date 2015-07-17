@@ -1,0 +1,13 @@
+<template name='shoppingCartTemplate' module="Sample">
+	<div>
+		<div foreach="@items" template="@(itemTemplate)">
+		</div>
+		<div>
+			<input value="@newItem"></input>
+			<button click="@addItem()">Add item</button>
+		</div>
+		<div>
+			<button click="@removeLast()">Remove last</button>
+		</div>
+	</div>
+</template>

@@ -1,4 +1,3 @@
-/// <reference path="index.ts" />
 var Wfx;
 (function (Wfx) {
     var Component = (function () {
@@ -91,7 +90,6 @@ var Wfx;
     })();
     Wfx.Binding = Binding;
 })(Wfx || (Wfx = {}));
-/// <reference path="index.ts"/>
 var Wfx;
 (function (Wfx) {
     var PropertyBehavior = (function () {
@@ -124,7 +122,6 @@ var Wfx;
     })();
     Wfx.PropertyBehavior = PropertyBehavior;
 })(Wfx || (Wfx = {}));
-/// <reference path="index.ts"/>
 var __extends = this.__extends || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -168,7 +165,6 @@ var Wfx;
     })(Wfx.PropertyBehavior);
     Wfx.DoNotherBehavior = DoNotherBehavior;
 })(Wfx || (Wfx = {}));
-/// <reference path="index.ts" />
 var Wfx;
 (function (Wfx) {
     var AttributeBehavior = (function (_super) {
@@ -189,7 +185,6 @@ var Wfx;
     })(Wfx.PropertyBehavior);
     Wfx.AttributeBehavior = AttributeBehavior;
 })(Wfx || (Wfx = {}));
-/// <reference path="Index.ts"/>
 var Wfx;
 (function (Wfx) {
     var ClassBehavior = (function (_super) {
@@ -209,7 +204,6 @@ var Wfx;
     })(Wfx.PropertyBehavior);
     Wfx.ClassBehavior = ClassBehavior;
 })(Wfx || (Wfx = {}));
-/// <reference path="Index.ts"/>
 var Wfx;
 (function (Wfx) {
     var EventBehavior = (function () {
@@ -231,7 +225,6 @@ var Wfx;
     })();
     Wfx.EventBehavior = EventBehavior;
 })(Wfx || (Wfx = {}));
-/// <reference path="Index.ts"/>
 var Wfx;
 (function (Wfx) {
     var TextBehavior = (function (_super) {
@@ -246,7 +239,20 @@ var Wfx;
     })(Wfx.PropertyBehavior);
     Wfx.TextBehavior = TextBehavior;
 })(Wfx || (Wfx = {}));
-/// <reference path="Index.ts"/>
+var Wfx;
+(function (Wfx) {
+    var StyleBehavior = (function (_super) {
+        __extends(StyleBehavior, _super);
+        function StyleBehavior() {
+            _super.apply(this, arguments);
+        }
+        StyleBehavior.prototype.applyValue = function (target, component, name, value) {
+            target.style[name] = value;
+        };
+        return StyleBehavior;
+    })(Wfx.PropertyBehavior);
+    Wfx.StyleBehavior = StyleBehavior;
+})(Wfx || (Wfx = {}));
 var Wfx;
 (function (Wfx) {
     var VisibleBehavior = (function (_super) {
@@ -266,7 +272,6 @@ var Wfx;
     })(Wfx.PropertyBehavior);
     Wfx.VisibleBehavior = VisibleBehavior;
 })(Wfx || (Wfx = {}));
-/// <reference path="index.ts"/>
 var Wfx;
 (function (Wfx) {
     var ValueAttributeBehavior = (function () {
@@ -302,7 +307,6 @@ var Wfx;
     })();
     Wfx.ValueAttributeBehavior = ValueAttributeBehavior;
 })(Wfx || (Wfx = {}));
-/// <reference path="index.ts"/>
 var Wfx;
 (function (Wfx) {
     var IfBehavior = (function (_super) {
@@ -332,19 +336,6 @@ var Wfx;
     })(Wfx.PropertyBehavior);
     Wfx.IfBehavior = IfBehavior;
 })(Wfx || (Wfx = {}));
-/// <reference path="Behavior.ts"/>
-/// <reference path="Component.ts"/>
-/// <reference path="Binding.ts"/>
-/// <reference path="PropertyBehavior.ts"/>
-/// <reference path="ForeachBehavior.ts"/>
-/// <reference path="AttributeBehavior.ts"/>
-/// <reference path="ClassBehavior.ts"/>
-/// <reference path="EventBehavior.ts"/>
-/// <reference path="TextBehavior.ts"/>
-/// <reference path="VisibleBehavior.ts"/>
-/// <reference path="ValueAttributeBehavior.ts"/>
-/// <reference path="IfBehavior.ts"/> 
-/// <reference path="index.ts" />
 var Wfx;
 (function (Wfx) {
     var Application = (function () {
@@ -367,22 +358,6 @@ var Wfx;
     })();
     Wfx.Application = Application;
 })(Wfx || (Wfx = {}));
-/// <reference path="Index.ts"/>
-var Wfx;
-(function (Wfx) {
-    var StyleBehavior = (function (_super) {
-        __extends(StyleBehavior, _super);
-        function StyleBehavior() {
-            _super.apply(this, arguments);
-        }
-        StyleBehavior.prototype.applyValue = function (target, component, name, value) {
-            target.style[name] = value;
-        };
-        return StyleBehavior;
-    })(Wfx.PropertyBehavior);
-    Wfx.StyleBehavior = StyleBehavior;
-})(Wfx || (Wfx = {}));
-/// <reference path="index.ts" />
 var Wfx;
 (function (Wfx) {
     Wfx.behaviors = {
@@ -459,4 +434,3 @@ var Wfx;
     }
     Wfx.element = element;
 })(Wfx || (Wfx = {}));
-//# sourceMappingURL=wfx.js.map
